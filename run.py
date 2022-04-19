@@ -28,8 +28,10 @@ def get_sales_data():
         sales_data = data_str.split(',')
 
         if validate_data(sales_data):
-            print('Data is vaild!')
+            print('Data is valid!')
             break
+    
+    return sales_data
 
 
 def validate_data(values):
@@ -50,4 +52,4 @@ def validate_data(values):
 
     return True
 
-get_sales_data()
+data = get_sales_data()
